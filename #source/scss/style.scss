@@ -65,8 +65,11 @@ li {
 		font-size: 47px;
 		font-family: $mainFont;
 		font-weight: bold;
-		@media (max-width: 425px) {
+		@media (max-width: 1024px) {
 			font-size: 35px;
+		}
+		@media (max-width: 425px) {
+			font-size: 25px;
 		}
 	}
 	&__slogan {
@@ -96,16 +99,18 @@ li {
 			visibility: hidden;
 			transition: all 0.3s ease 0s;
 			&.active {
-				top: 114px;
+				top: 102px;
 				opacity: 1;
 				visibility: visible;
 				transition: all 0.3s ease 0s;
 			} 
 		}
 		@media (max-width: 425px) {
+			width: 100%;
+			height: 100vh;
 			&.active {
 				top: 101px;
-				width: 100%;
+				left: 0;
 			}
 		}
   }
@@ -131,13 +136,16 @@ li {
 			margin: 30px 30px 40px 30px;
 			color: #fff;
 			font-family: $mainFont;
-			font-size: 47px;
+			font-size: 35px;
 			font-weight: bold;
+		}
+		@media (max-width: 425px) {
+			font-size: 25px;
 		}
 	}
 	&__link {
 		font-family: $mainFont;
-		font-size: 25px;
+		font-size: 19px;
 		color: #fff;
 		&:hover {
 			text-decoration: underline;
@@ -873,8 +881,7 @@ li {
 		font-family: $mainFont;
 		@media (max-width: 850px) {
 			flex-direction: column;
-			justify-content: center;
-			text-align: center;
+			justify-content: start;
 			& div {
 				margin-bottom: 35px;
 				&:last-child {
@@ -892,6 +899,9 @@ li {
 	}
 	&__contact {
 		font-weight: bold;
+		@media (max-width: 850px) {
+			padding-left: 35px;
+		}
 		&-mail {
 			padding-bottom: 10px;
 			position: relative;
@@ -914,11 +924,8 @@ li {
 	}
 	&__internet {
 		& p {
-			text-align: right;
+			text-align: left;
 			font-size: 14px;
-			@media (max-width: 850px) {
-				text-align: center;
-			}
 		}
 	}
 	&__links {
