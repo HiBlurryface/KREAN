@@ -156,7 +156,7 @@ li {
     height: 100vh;
   }
   .menu__body.active {
-    top: 101px;
+    top: 89px;
     left: 0;
   }
 }
