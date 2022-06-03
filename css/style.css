@@ -2,6 +2,12 @@ html {
   overflow-x: hidden;
 }
 
+@media (max-width: 425px) {
+  body.lock {
+    overflow: hidden;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -142,7 +148,7 @@ li {
     transition: all 0.3s ease 0s;
   }
   .menu__body.active {
-    top: 102px;
+    top: 100px;
     opacity: 1;
     visibility: visible;
     -webkit-transition: all 0.3s ease 0s;

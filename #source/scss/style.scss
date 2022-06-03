@@ -3,6 +3,11 @@ $mainFont: 'Ubuntu', sans-serif;
 html {
 	overflow-x: hidden;
 }
+body.lock {
+	@media (max-width: 425px) {
+		overflow: hidden;
+	}
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -99,7 +104,7 @@ li {
 			visibility: hidden;
 			transition: all 0.3s ease 0s;
 			&.active {
-				top: 102px;
+				top: 100px;
 				opacity: 1;
 				visibility: visible;
 				transition: all 0.3s ease 0s;
